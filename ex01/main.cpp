@@ -6,35 +6,35 @@
 /*   By: apaula-l <apaula-l@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/17 10:58:45 by apaula-l          #+#    #+#             */
-/*   Updated: 2025/08/17 19:32:43 by apaula-l         ###   ########.fr       */
+/*   Updated: 2025/08/17 20:27:44 by apaula-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main() {
     std::string name1, name2;
 
-    std::cout << "Enter the name of your first ClapTrap: ";
+    std::cout << "Enter the name of your first ScavTrap: ";
     std::cin >> name1;
-    ClapTrap clap1(name1);
+    ScavTrap scav1(name1);
 
-    std::cout << "Enter the name of your second ClapTrap: ";
+    std::cout << "Enter the name of your second ScavTrap: ";
     std::cin >> name2;
-    ClapTrap clap2(name2);
+    ScavTrap scav2(name2);
 
+    scav1.attack(name2);
+    scav2.takeDamage(20);
 
-    clap1.attack(name2);
-    clap2.takeDamage(3);
+    scav2.attack(name1);
+    scav1.takeDamage(20);
 
-    clap2.attack(name1);
-    clap1.takeDamage(4);
+    scav1.beRepaired(10);
+    scav2.beRepaired(5);
 
-    clap1.beRepaired(5);
-    clap2.beRepaired(2);
-
-    clap1.attack(name2);
-    clap2.takeDamage(6);
+    scav1.guardGate();
+    scav2.guardGate();
 
     return 0;
 }

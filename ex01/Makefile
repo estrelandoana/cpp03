@@ -5,15 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: apaula-l <apaula-l@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/08/17 23:20:41 by apaula-l          #+#    #+#              #
-#    Updated: 2025/08/17 23:21:09 by apaula-l         ###   ########.fr        #
+#    Created: 2025/08/16 23:18:26 by apaula-l          #+#    #+#              #
+#    Updated: 2025/08/17 19:42:08 by apaula-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ScavTap
+NAME = ScavTrap
 
 SRC = main.cpp \
-	ScavTap.cpp
+	ClapTrap.cpp \
+	ScavTrap.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
