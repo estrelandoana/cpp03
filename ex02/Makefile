@@ -5,15 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: apaula-l <apaula-l@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/08/16 23:22:59 by apaula-l          #+#    #+#              #
-#    Updated: 2025/08/16 23:23:33 by apaula-l         ###   ########.fr        #
+#    Created: 2025/08/16 23:18:26 by apaula-l          #+#    #+#              #
+#    Updated: 2025/08/17 20:53:10 by apaula-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = FragTap
+NAME = FragTrap
 
 SRC = main.cpp \
-	FragTap.cpp
+	ClapTrap.cpp \
+	ScavTrap.cpp \
+	FragTrap.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
